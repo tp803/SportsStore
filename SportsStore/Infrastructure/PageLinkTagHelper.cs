@@ -9,13 +9,13 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using SportsStore.Models.ViewModels;
 
-namespace SportsStore.Infrastucture
+namespace SportsStore.Infrastructure
 {
-    [HtmlTargetElement("div", Attributes = "pagemodel")]
+    [HtmlTargetElement("div", Attributes = "page-model")]
     public class PageLinkTagHelper : TagHelper
     {
         private IUrlHelperFactory urlHelperFactory;
-        private PageLinkTagHelper(IUrlHelperFactory helperFactory)
+        public PageLinkTagHelper(IUrlHelperFactory helperFactory)
         {
             urlHelperFactory = helperFactory;
         }
