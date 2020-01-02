@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" 
-          asp-href-include="/lib/bootstrap/dist/**/*.min.css"
+          asp-href-include="/lib/twitter-bootstrap/**/*.min.css"
           asp-href-exclude="**/*-reboot*,**/*-grid*" />
     <title>SportsStore</title>
 </head>
@@ -12,9 +12,9 @@
     <div class="navbar navbar-inverse bg-inverse" role="navigation">
         <a class="navbar-brand" href="#">SPORTS STORE</a>
     </div>
-    <div class="row m-1 p=1">
+    <div class="row m-1 p-1">
         <div id="categories" class="col-3">
-            Balls
+            @await Component.InvokeAsync("NavigationMenu")
         </div>
 
         <div class="col-9">
