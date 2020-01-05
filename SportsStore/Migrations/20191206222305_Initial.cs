@@ -9,7 +9,7 @@ namespace SportsStore.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+           /* migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -23,7 +23,7 @@ namespace SportsStore.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.ProductID);
-                });
+                });*/
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

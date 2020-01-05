@@ -9,7 +9,7 @@ namespace SportsStore.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+            /*migrationBuilder.CreateTable(
                 name: "Orders",
                 columns: table => new
                 {
@@ -65,7 +65,7 @@ namespace SportsStore.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_CartLine_ProductID",
                 table: "CartLine",
-                column: "ProductID");
+                column: "ProductID");*/
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
